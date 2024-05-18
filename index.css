@@ -1,116 +1,28 @@
 body {
-    background-color: #1c1c1c;
+    background-color: #1e1e1e;
     color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     box-sizing: border-box;
-}
-
-.container {
-    width: 400px;
-}
-
-.title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #00ff3c, #08f596, #00fef1);
+    font-family: "Staatliches", sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header{
+     display: flex;
+     justify-content: center;
+  }
+  .title {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #0dff00, #007bff);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
-}
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+  }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.task-input {
-    background: none;
-    border: none;
-    outline: none;
-    color: #ccc;
-    width: 100%;
-    margin-right: 10px;
-    font-size: 16px;
-}
-
-.time-button, .add-button {
-    background-color: #444;
-    border: none;
-    color: #ccc;
-    padding: 10px;
-    padding-inline: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.time-button {
-    margin-right: 10px;
-}
-
-.todo-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-}
-
-.todo-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #00ff08;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    margin-right: 10px;
-}
-
-.checkbox.completed {
-    
-}
-
-.checkbox.completed::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.task {
-    flex-grow: 1;
-}
-
-.time {
-    margin-right: 10px;
-}
-
-.delete-icon {
-    color: #e53935;
-    cursor: pointer;
-}
-
-::placeholder{
-    color: green;
-}
+  
