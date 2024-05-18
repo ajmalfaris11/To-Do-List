@@ -26,9 +26,31 @@
         <header>
             <h1 class="title">Todo App</h1>
         </header>
-        
+        <section class="inputContaier">
+            <div class="inputDiv">
+                <input type="text" placeholder="Task name" class="taskInput">
+            </div>
+            <div class="otherInputDiv">
+                <div class="timerDiv">
+                    <input type="text" placeholder="Set time" class="timeInput" readonly>
+                    <span class="material-symbols-outlined">
+                        timer
+                        </span>
+                </div>
+                <div class="urgencySelectContainer">
+                    <div class="ungencyDiv">
+                        <select class="urgencySelect">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                            <option value="important">Important</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="add-button"><span class="material-symbols-outlined">add</span></button>
+            </div>
+        </section>
     </section>
-
 
     <script src="index.js"></script>
 </body>

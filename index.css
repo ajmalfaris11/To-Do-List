@@ -5,17 +5,17 @@ body {
     font-family: "Staatliches", sans-serif;
   }
   
-  .container {
-    max-width: 600px;
+.container {
+    max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    padding-inline: 2%;
   }
   
   header{
      display: flex;
      justify-content: center;
   }
-  .title {
+.title {
     font-size: 2.5rem;
     background: linear-gradient(90deg, #0dff00, #007bff);
     -webkit-background-clip: text;
@@ -25,4 +25,113 @@ body {
     font-family: "Protest Guerrilla", sans-serif;
   }
 
+.inputContaier {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    border: #0dff00 1px solid;
+    padding: 10px;
+  }
+
+.inputDiv{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.taskInput{
+    width: 95%;
+    border-radius: 8px;
+
+}
+
+.timeInput {
+    width: 100px;
+}
+.otherInputDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timerDiv{
+    display: flex;
+    background-color: #333;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.timerDiv span{
+    color: #c7c7c7;
+}
+
+.taskInput, .timeInput {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
   
+  .time-button {
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, #0dff00, #007bff);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding-inline: 20px;
+    
+  }
+
+  .add-button span{
+    font-weight: 600;
+  }
+  
+  .urgencySelectContainer {
+    position: relative;
+  }
+
+  .ungencyDiv{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .urgencySelect {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    padding-inline: 10px;
+  }
+  
+  
+  .todo-list,
+  .completed-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  input:focus , select:focus{
+    outline: none;
+  }
