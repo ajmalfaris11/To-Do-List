@@ -26,16 +26,14 @@
         <header>
             <h1 class="title">Todo App</h1>
         </header>
-        <section class="inputContaier">
+        <section class="inputSection">
             <div class="inputDiv">
                 <input type="text" placeholder="Task name" class="taskInput">
             </div>
             <div class="otherInputDiv">
                 <div class="timerDiv">
                     <input type="text" placeholder="Set time" class="timeInput" readonly>
-                    <span class="material-symbols-outlined">
-                        timer
-                        </span>
+                    <span class="material-symbols-outlined">timer</span>
                 </div>
                 <div class="urgencySelectContainer">
                     <div class="ungencyDiv">
@@ -47,11 +45,32 @@
                         </select>
                     </div>
                 </div>
-                <button class="add-button"><span class="material-symbols-outlined">add</span></button>
+                <button class="addButton"><span class="material-symbols-outlined">add</span></button>
             </div>
+        </section>
+
+        <section class="taskBarSection">
+            <div class="menuBar">
+                <ul class="taskCatagory">
+                    <li class="unCompletedTask selectedMenu">Un-Completed Tasks</li>
+                    <li class="completedTask">Completed Tasks</li>
+                </ul>
+            </div>
+            <section class="UnCompletedTask">
+                <ul class="toDoList">
+                    <!-- Task items will be dynamically added here -->
+                </ul>
+            </section>
+
+            <section class="completedTask">
+                <ul class="completedList">
+                    <!-- Completed Task will be dynamically added here -->
+                </ul>
+            </section>
         </section>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="index.js"></script>
 </body>
 </html>

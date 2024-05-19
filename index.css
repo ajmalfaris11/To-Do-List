@@ -8,13 +8,16 @@ body {
 .container {
     max-width: 500px;
     margin: 0 auto;
-    padding-inline: 2%;
+    padding-inline:2%;
   }
   
+  /* ===== Header section ===== Header section ===== */
+
   header{
      display: flex;
      justify-content: center;
   }
+  
 .title {
     font-size: 2.5rem;
     background: linear-gradient(90deg, #0dff00, #007bff);
@@ -25,7 +28,10 @@ body {
     font-family: "Protest Guerrilla", sans-serif;
   }
 
-.inputContaier {
+
+/* ===== Input Section ===== Input Section ===== */
+
+.inputSection {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -84,7 +90,7 @@ body {
     cursor: pointer;
   }
   
-  .add-button {
+  .addButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +101,13 @@ body {
     cursor: pointer;
     padding-inline: 20px;
     
+    
+  }
+  .addButton:hover{
+    background: linear-gradient(90deg, #0dff00, #007bff);
   }
 
-  .add-button span{
+  .addButton span{
     font-weight: 600;
   }
   
@@ -125,13 +135,170 @@ body {
     padding-inline: 10px;
   }
   
+ /* ===== task Section ===== task Section ===== */
+
+
+ .menuBar{
+    background:linear-gradient(360deg, #1e1e1e,#242424);
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+}
+
+.selectedMenu{
+    border-bottom: #007bff solid 3px;
+}
+
+
+ .taskBarSection{
+    
+ }
   
-  .todo-list,
-  .completed-list {
+.toDoList,
+.completed-list,
+.taskCatagory {
     list-style: none;
     padding: 0;
   }
 
-  input:focus , select:focus{
+  .toDoList,
+.completed-list{
+    overflow-y: scroll;
+    height:100;
+
+}
+input:focus , select:focus{
     outline: none;
   }
+
+
+
+.taskCatagory{
+    width: 100%;
+    display: flex;
+    color: #0dff00;
+    justify-content: space-between;
+  }
+
+  .taskCatagory {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .taskCatagory li{
+    width: 50%;
+    padding: 10px;
+  }
+
+
+.Un-completedTask{
+    overflow: hidden;
+}
+
+.urgencySelectContainer {
+    position: relative;
+  }
+  
+  .urgencySelect {
+    appearance: none;
+    -moz-appearance: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .urgencySelect option {
+    color: #0dff00;
+  }
+
+  
+.toDoList,
+.completedList {
+  list-style: none;
+  padding: 0;
+}
+
+.completedList{
+    display: none;
+}
+
+.toDoItem,
+.completedItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 14px;
+}
+
+.checkBox {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.checkBox.completed::after {
+  content: '\2713'; /* Unicode check mark */
+  position: absolute;
+  color: #0dff00;
+  font-size: 1.2rem;
+  bottom:0.0px;
+  left: 3px;
+  font-weight: 600;
+
+}
+
+
+.task {
+  flex-grow: 1;
+}
+
+.time {
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.deleteIcon {
+  color: #ff1f1f;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.taskBarSection{
+}
+/* .UnCompletedTask{
+    height: 100px;
+} */
+
+/* Add custom styles for the Flatpickr time input */
+
+
+.flatpickr-time{
+    border-radius: 12px;
+    background-color:#333;
+    color:#0dff00;
+}
+
+.flatpickr-time input {
+  background-color: #333 !important;
+  color: #0dff00 !important;
+  border: none !important;
+}
+
+
