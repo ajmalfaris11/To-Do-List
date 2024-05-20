@@ -9,4 +9,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const completedTask = document.querySelector('.completedTask')
     const selectedMenu = document.querySelectorAll('.selectedMenu');
 
+
+    // change the task section and completed task sections 
+
+    unCompletedTask.addEventListener('click',()=>{
+        unCompletedTask.classList.add('selectedMenu');
+        completedTask.classList.remove('selectedMenu')
+        completedList.style.display = 'none';
+        toDoList.style.display = 'block';
+
+    })
+
+    completedTask.addEventListener('click',()=>{
+        completedTask.classList.add('selectedMenu');
+        unCompletedTask.classList.remove('selectedMenu')
+        completedList.style.display = 'block';
+        toDoList.style.display = 'none';
+    })
+
+
 });
