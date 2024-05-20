@@ -28,13 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-       // Initialize flatpickr for the time input
+    // Initialize flatpickr for the time input
     flatpickr(timeInput, {
         enableTime: true,
         noCalendar: true,
         dateFormat: "h:i K",
         onOpen: function(selectedDates, dateStr, instance) {
             instance.setDate(new Date());
+        }
+    });
+
+    // Add button action
+    addButton.addEventListener('click', addTask);
+    taskInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            addTask();
         }
     });
 
