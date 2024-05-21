@@ -66,7 +66,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const toDoItem = document.createElement('li');
         toDoItem.classList.add('toDoItem');
 
-        
+        // Check Box created with div and set Actions
+        const checkBox = document.createElement('div');
+        checkBox.classList.add('checkBox');
+        checkBox.addEventListener('click', () => {
+        checkBox.classList.toggle('completed');
+
+        // Time of when completed task
+        const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        let completedTimeSpan = toDoItem.querySelector('.time.completed-time');
+
+        if (checkBox.classList.contains('completed')) {
+            if (!completedTimeSpan) {
+                completedTimeSpan = document.createElement('span');
+                completedTimeSpan.classList.add('time', 'completed-time');
+                completedTimeSpan.textContent = currentTime;
+                toDoItem.appendChild(completedTimeSpan);
+            }
+            completedList.appendChild(toDoItem);
+        } else {
+            if (completedTimeSpan) {
+                toDoItem.removeChild(completedTimeSpan);
+            }
+            toDoList.appendChild(toDoItem);
+        }
+    });
     } 
 
 });
