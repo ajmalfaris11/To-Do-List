@@ -103,6 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
     timeSpan.classList.add('time');
     timeSpan.textContent = completionTime;
 
+    // edit icon 
+    const editIcon = document.createElement('i');
+    editIcon.classList.add('fa', 'fa-pencil', 'editIcon');
+    editIcon.addEventListener('click', () => {
+        editTask(taskSpan);
+    });
 
 
     } 
