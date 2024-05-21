@@ -98,6 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     taskSpan.classList.add('task');
     taskSpan.textContent = taskName;
 
+    // Time showing 
+    const timeSpan = document.createElement('span');
+    timeSpan.classList.add('time');
+    timeSpan.textContent = completionTime;
+
 
 
     } 
