@@ -117,7 +117,16 @@ document.addEventListener('DOMContentLoaded', () => {
         toDoItem.remove();
     });
 
-
+     // Adding the elements to todo item section
+     toDoItem.appendChild(urgencyDot);
+     toDoItem.appendChild(checkBox);
+     toDoItem.appendChild(taskSpan);
+     toDoItem.appendChild(timeSpan);
+     toDoItem.appendChild(editIcon);
+     toDoItem.appendChild(deleteIcon);
+     toDoList.appendChild(toDoItem);
+     taskInput.value = '';
+     timeInput.value = '';
 
     } 
 
