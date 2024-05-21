@@ -149,7 +149,7 @@ body {
 
 .selectedMenu{
     border-bottom: #007bff solid 3px;
-    transition: color 0.5s, border-bottom 0.5s;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 
@@ -358,4 +358,28 @@ input:focus , select:focus{
 .error::placeholder{
     color: #ff1f1f;
     font-size: x-small;
+}
+
+
+
+/* Animation for task items */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toDoList li, .completedList li {
+  opacity: 0;
+  animation: fadeInDown 0.5s forwards;
+  animation-delay: calc(var(--animation-order) * 0.5s);
+}
+
+.toDoList li.active, .completedList li.active {
+  opacity: 1;
 }
