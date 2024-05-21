@@ -110,6 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
         editTask(taskSpan);
     });
 
+    // delete icon
+    const deleteIcon = document.createElement('i');
+    deleteIcon.classList.add('fa', 'fa-trash', 'deleteIcon');
+    deleteIcon.addEventListener('click', () => {
+        toDoItem.remove();
+    });
+
+
 
     } 
 
