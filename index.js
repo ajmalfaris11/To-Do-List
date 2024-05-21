@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
      // Adding the elements to todo item section
-     toDoItem.appendChild(urgencyDot);
+    //  toDoItem.appendChild(urgencyDot);
      toDoItem.appendChild(checkBox);
      toDoItem.appendChild(taskSpan);
      toDoItem.appendChild(timeSpan);
