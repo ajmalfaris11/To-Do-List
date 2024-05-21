@@ -91,6 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
             toDoList.appendChild(toDoItem);
         }
     });
+
+
+    // Task text showing 
+    const taskSpan = document.createElement('p');
+    taskSpan.classList.add('task');
+    taskSpan.textContent = taskName;
+
+
+
     } 
 
 });
