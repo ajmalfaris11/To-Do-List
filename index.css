@@ -53,7 +53,10 @@ body {
 }
 
 .timeInput {
-    width: 100px;
+    width: 100%;
+    border-radius: 12px;
+    min-width: 60px;
+
 }
 .otherInputDiv{
     display: flex;
@@ -117,8 +120,8 @@ body {
 
   .ungencyDiv{
     background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
+    padding-block: 10px;
+    border-radius: 8px;
     display: flex;
     gap: 10px;
   }
@@ -128,11 +131,11 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: #333;
-    color: #fff;
+    color: #0dff00;
     border: none;
     font-size: 1rem;
     text-align: center;
-    padding-inline: 10px;
+    padding-inline: 5px;
   }
   
  /* ===== task Section ===== task Section ===== */
