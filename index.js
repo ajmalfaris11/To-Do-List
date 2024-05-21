@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
             taskInput.placeholder = 'Task Name';
             taskInput.classList.remove('error');
         });
+
+        // Task Box
+        const toDoItem = document.createElement('li');
+        toDoItem.classList.add('toDoItem');
+
         
     } 
 
