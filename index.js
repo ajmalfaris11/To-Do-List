@@ -130,4 +130,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } 
 
+
+     // Edit task function
+     function editTask(taskSpan) {
+        const originalText = taskSpan.textContent;
+        const inputEdit = document.createElement('input');
+        inputEdit.type = 'text';
+        inputEdit.value = originalText;
+        inputEdit.classList.add('task-input-edit');
+
+        taskSpan.replaceWith(inputEdit);
+
+        inputEdit.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                finishEditing(inputEdit, taskSpan);
+            }
+        });
+
+        inputEdit.addEventListener('blur', () => {
+            finishEditing(inputEdit, taskSpan);
+        });
+
+        inputEdit.focus();
+    }
+
+    function finishEditing(inputEdit, taskSpan) {
+        const newText = inputEdit.value.trim();
+        if (newText === '') {
+            inputEdit.value = taskSpan.textContent;
+        } else {
+            taskSpan.textContent = newText;
+        }
+        inputEdit.replaceWith(taskSpan);
+    }
+
+
 });
