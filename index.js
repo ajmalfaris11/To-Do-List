@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const urgencySelect = document.querySelector('.urgencySelect');
     const unCompletedTask = document.querySelector('.unCompletedTask');
     const completedTask = document.querySelector('.completedTask')
-    const selectedMenu = document.querySelectorAll('.selectedMenu');
+    const selectedMenu = document.querySelector('.selectedMenu');
+    const error = document.querySelector('.error');
 
 
     // change the task section and completed task sections 
@@ -45,5 +46,22 @@ document.addEventListener('DOMContentLoaded', () => {
             addTask();
         }
     });
+
+    // Functions after click the add button
+    function addTask() {
+        const taskName = taskInput.value.trim();
+        const completionTime = timeInput.value.trim();
+        if (taskName === '') {
+            taskInput.placeholder = '⚠ Enter Your Task Before Add';
+            taskInput.classList.add ('error');
+            return;
+        }
+
+        taskInput.addEventListener('input', () => {
+            taskInput.placeholder = 'Task Name';
+            taskInput.classList.remove('error');
+        });
+        
+    } 
 
 });

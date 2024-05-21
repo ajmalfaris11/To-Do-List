@@ -33,6 +33,7 @@ body {
 
 .inputSection {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 10px;
     border-radius: 12px;
@@ -67,7 +68,6 @@ body {
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-    padding-inline: 10px;
 }
 
 .timerDiv span{
@@ -263,8 +263,9 @@ input:focus , select:focus{
 }
 
 .time {
-  margin-right: 12px;
+  margin-inline: 12px;
   font-size: 14px;
+  color: #0dff00;
 }
 
 .deleteIcon {
@@ -273,10 +274,10 @@ input:focus , select:focus{
   font-size: 14px;
 }
 
-.edit-icon {
-  color: #fff;
+.editIcon {
+  color: #007bff;
   cursor: pointer;
-  margin-right: 12px;
+  margin-inline: 12px;
   font-size: 14px;
 }
 
@@ -286,9 +287,8 @@ input:focus , select:focus{
     height: 100px;
 } */
 
+
 /* Add custom styles for the Flatpickr time input */
-
-
 .flatpickr-time{
     border-radius: 12px;
     background-color:#333;
@@ -301,4 +301,39 @@ input:focus , select:focus{
   border: none !important;
 }
 
+/* Custom Flatpickr styles */
+.flatpickr-calendar {
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
 
+.flatpickr-months {
+  background: #444;
+}
+
+.flatpickr-day {
+  background: #555;
+  border-radius: 50%;
+}
+
+.flatpickr-day:hover {
+  background: #666;
+}
+
+.flatpickr-day.today {
+  background: #ff5722;
+  color: #fff;
+}
+
+.flatpickr-day.selected {
+  background: #ff9800;
+  color: #fff;
+}
+
+
+.error::placeholder{
+    color: #ff1f1f;
+    font-size: x-small;
+}
