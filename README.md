@@ -15,6 +15,7 @@ This is a simple web application built using HTML, CSS, and JavaScript for creat
 - **CSS**: Used for styling and layout.
 - **JavaScript**: Used for dynamic functionality and interactions.
 
+
 ## Usage
 
 1. Clone this repository to your local machine.
@@ -26,7 +27,4 @@ This is a simple web application built using HTML, CSS, and JavaScript for creat
 
 [Link to live demo]()
 
-## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
