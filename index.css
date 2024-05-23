@@ -57,6 +57,7 @@ body {
 .inputDiv{
     width: 100%;
     border-radius: 8px;
+    background-color: #333;
 }
 
 .taskInput{
