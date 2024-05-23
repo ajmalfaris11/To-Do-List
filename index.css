@@ -296,7 +296,8 @@ input:focus , select:focus{
   overflow-y: auto; 
   max-height: 75vh; 
   padding-inline: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
+  scroll-behavior: smooth;
 }
 
 
@@ -392,6 +393,31 @@ input:focus , select:focus{
   animation-delay: calc(var(--animation-order) * 0.5s);
 }
 
-. li.active, .completedList li.active {
+.toDoList li.active, .completedList li.active {
   opacity: 1;
+}
+
+/* ------------Scroll Bar design ------------- */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #007bff, #0dff00);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0dff00;
 }
