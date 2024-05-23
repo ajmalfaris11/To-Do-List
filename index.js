@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const inputEdit = document.createElement('input');
         inputEdit.type = 'text';
         inputEdit.value = originalText;
-        inputEdit.classList.add('task-input-edit');
+        inputEdit.classList.add('editInput');
 
         taskSpan.replaceWith(inputEdit);
 

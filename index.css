@@ -116,8 +116,7 @@ body {
     color: #fff;
     cursor: pointer;
     padding-inline: 20px;
-    
-    
+  
   }
   .addButton:hover{
     background: linear-gradient(90deg, #0dff00, #007bff);
@@ -236,11 +235,12 @@ input:focus , select:focus{
 .toDoItem,
 .completedItem {
   display: flex;
-  align-items: center;
+  align-items:center;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #333;
   border-radius: 14px;
+  justify-content: space-between;
 }
 
 .checkBox {
@@ -289,6 +289,13 @@ input:focus , select:focus{
   cursor: pointer;
   margin-inline: 12px;
   font-size: 14px;
+}
+
+.editInput{
+  background-color: #333;
+  border: none;
+  color:#007bff;
+  
 }
 
 
