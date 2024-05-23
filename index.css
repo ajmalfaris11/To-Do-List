@@ -1,14 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
     background-color: #1e1e1e;
     color: #fff;
     box-sizing: border-box;
     font-family: "Staatliches", sans-serif;
+    height: 100vh;
   }
   
 .container {
     max-width: 500px;
     margin: 0 auto;
     padding-inline:2%;
+    overflow: hidden;
+    height: 100vh; 
   }
   
   /* ===== Header section ===== Header section ===== */
@@ -26,6 +36,8 @@ body {
     color: transparent;
     text-align: center;
     font-family: "Protest Guerrilla", sans-serif;
+    padding-block: 20px;
+
   }
 
 
@@ -39,6 +51,7 @@ body {
     border-radius: 12px;
     border: #0dff00 1px solid;
     padding: 10px;
+    margin-bottom: 20px;
   }
 
 .inputDiv{
@@ -145,6 +158,7 @@ body {
     background:linear-gradient(360deg, #1e1e1e,#242424);
     border-start-start-radius: 8px;
     border-start-end-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .selectedMenu{
@@ -163,7 +177,6 @@ body {
   .toDoList,
 .completed-list{
     overflow-y: scroll;
-    height:100;
     transition: color 0.3s, border-bottom 0.3s;
 
 }
@@ -191,10 +204,6 @@ input:focus , select:focus{
     padding: 10px;
   }
 
-
-.Un-completedTask{
-    overflow: hidden;
-}
 
 .urgencySelectContainer {
     position: relative;
@@ -283,9 +292,12 @@ input:focus , select:focus{
 }
 
 
-/* .UnCompletedTask{
-    height: 100px;
-} */
+.toDoList, .completedList{
+  overflow-y: auto; 
+  max-height: 75vh; 
+  padding-inline: 10px;
+  padding-bottom: 80px;
+}
 
 
 /* ====== Costomized the flatpickr Box ====== */
@@ -380,6 +392,6 @@ input:focus , select:focus{
   animation-delay: calc(var(--animation-order) * 0.5s);
 }
 
-.toDoList li.active, .completedList li.active {
+. li.active, .completedList li.active {
   opacity: 1;
 }
