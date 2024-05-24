@@ -262,8 +262,8 @@ input:focus , select:focus{
   position: absolute;
   color: #0dff00;
   font-size: 1.2rem;
-  bottom:0.0px;
-  left: 3px;
+  bottom:-3px;
+  left: 1px;
   font-weight: 600;
 
 }
@@ -383,7 +383,8 @@ input:focus , select:focus{
 
 
 
-/* Animation for task items */
+/*========== Animation for task items /*========== */
+
 @keyframes fadeInDown {
   from {
     opacity: 0;

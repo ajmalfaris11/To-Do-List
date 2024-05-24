@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteIcon = document.createElement('i');
     deleteIcon.classList.add('fa', 'fa-trash', 'deleteIcon');
     deleteIcon.addEventListener('click', () => {
+        toDoItem.classList.add('removeAnimation')
         toDoItem.remove();
     });
 
