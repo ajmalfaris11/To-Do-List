@@ -66,12 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const toDoItem = document.createElement('li');
         toDoItem.classList.add('toDoItem');
 
+        const outerCheckBox = document.createElement('div');
+        
+
         // Check Box created with div and set Actions
         const checkBox = document.createElement('div');
         checkBox.classList.add('checkBox');
         checkBox.addEventListener('click', () => {
         checkBox.classList.toggle('completed');
 
+        
         // Time of when completed task
         const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         let completedTimeSpan = toDoItem.querySelector('.time.completed-time');
@@ -83,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 completedTimeSpan.textContent = currentTime;
                 toDoItem.appendChild(completedTimeSpan);
             }
-            completedList.appendChild(toDoItem);
+            completedList.insertBefore(toDoItem, completedList.firstChild);
         } else {
             if (completedTimeSpan) {
                 toDoItem.removeChild(completedTimeSpan);
@@ -119,7 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // Adding the elements to todo item section
     //  toDoItem.appendChild(urgencyDot);
-     toDoItem.appendChild(checkBox);
+
+     outerCheckBox.appendChild(checkBox)
+     toDoItem.appendChild(outerCheckBox);
      toDoItem.appendChild(taskSpan);
      toDoItem.appendChild(timeSpan);
      toDoItem.appendChild(editIcon);
