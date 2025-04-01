@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,237 +6,242 @@
 
 
 body {
-    background-color: #1e1e1e;
-    color: #fff;
-    box-sizing: border-box;
-    font-family: "Staatliches", sans-serif;
-    height: 100vh;
-  }
-  
+  background-color: #1e1e1e;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Staatliches", sans-serif;
+  height: 100vh;
+}
+
 .container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding-inline:2%;
-    overflow: hidden;
-    height: 100vh; 
-  }
-  
-  /* ===== Header section ===== Header section ===== */
+  max-width: 500px;
+  margin: 0 auto;
+  padding-inline: 2%;
+  overflow: hidden;
+  height: 100vh;
+}
 
-  header{
-     display: flex;
-     justify-content: center;
-  }
-  
+/* ===== Header section ===== Header section ===== */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
-    font-size: 2.5rem;
-    background: linear-gradient(90deg, #0dff00, #007bff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-    font-family: "Protest Guerrilla", sans-serif;
-    padding-block: 20px;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #0dff00, #007bff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-family: "Protest Guerrilla", sans-serif;
+  padding-block: 20px;
 
-  }
+}
 
 
 /* ===== Input Section ===== Input Section ===== */
 
 .inputSection {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 12px;
-    border: #0dff00 1px solid;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-.inputDiv{
-    width: 100%;
-    border-radius: 8px;
-    background-color: #333;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+  border: #0dff00 1px solid;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.taskInput{
-    width: 95%;
-    border-radius: 8px;
+.inputDiv {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.taskInput {
+  width: 95%;
+  border-radius: 8px;
 
 }
 
 .timeInput {
-    width: 100%;
-    border-radius: 12px;
-    min-width: 60px;
+  width: 100%;
+  border-radius: 12px;
+  min-width: 60px;
 
 }
-.otherInputDiv{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 10px;
+
+.otherInputDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
 }
 
-.timerDiv{
-    display: flex;
-    background-color: #333;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+.timerDiv {
+  display: flex;
+  background-color: #333;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
-.timerDiv span{
-    color: #c7c7c7;
+.timerDiv span {
+  color: #c7c7c7;
 }
 
-.taskInput, .timeInput {
-    padding: 10px;
-    border: none;
-    font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .time-button {
-    background-color: #333;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .addButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(60deg, #0dff00, #007bff);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    padding-inline: 20px;
-  
-  }
-  .addButton:hover{
-    background: linear-gradient(90deg, #0dff00, #007bff);
-  }
-
-  .addButton span{
-    font-weight: 600;
-  }
-  
-  .urgencySelectContainer {
-    position: relative;
-  }
-
-  .ungencyDiv{
-    background-color: #333;
-    padding-block: 10px;
-    border-radius: 8px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .urgencySelect {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #333;
-    color: #0dff00;
-    border: none;
-    font-size: 1rem;
-    text-align: center;
-    padding-inline: 5px;
-  }
-  
- /* ===== task Section ===== task Section ===== */
-
-
- .menuBar{
-    background:linear-gradient(360deg, #1e1e1e,#242424);
-    border-start-start-radius: 8px;
-    border-start-end-radius: 8px;
-    margin-bottom: 20px;
+.taskInput,
+.timeInput {
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
 }
 
-.selectedMenu{
-    border-bottom: #007bff solid 3px;
-    transition: color 0.3s, border-bottom 0.3s;
+.time-button {
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(60deg, #0dff00, #007bff);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding-inline: 20px;
+
+}
+
+.addButton:hover {
+  background: linear-gradient(90deg, #0dff00, #007bff);
+}
+
+.addButton span {
+  font-weight: 600;
+}
+
+.urgencySelectContainer {
+  position: relative;
+}
+
+.ungencyDiv {
+  background-color: #333;
+  padding-block: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.urgencySelect {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #333;
+  color: #0dff00;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  padding-inline: 5px;
+}
+
+/* ===== task Section ===== task Section ===== */
+
+
+.menuBar {
+  background: linear-gradient(360deg, #1e1e1e, #242424);
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.selectedMenu {
+  border-bottom: #007bff solid 3px;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 
 .toDoList,
 .completed-list,
 .taskCatagory {
-    list-style: none;
-    padding: 0;
-  }
+  list-style: none;
+  padding: 0;
+}
 
-  .toDoList,
-.completed-list{
-    overflow-y: scroll;
-    transition: color 0.3s, border-bottom 0.3s;
+.toDoList,
+.completed-list {
+  overflow-y: scroll;
+  transition: color 0.3s, border-bottom 0.3s;
 
 }
-input:focus , select:focus{
-    outline: none;
-  }
+
+input:focus,
+select:focus {
+  outline: none;
+}
 
 
-.taskCatagory{
-    width: 100%;
-    display: flex;
-    color: #0dff00;
-    justify-content: space-between;
-    
-  }
+.taskCatagory {
+  width: 100%;
+  display: flex;
+  color: #0dff00;
+  justify-content: space-between;
 
-  .taskCatagory {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+}
 
-  .taskCatagory li{
-    width: 50%;
-    padding: 10px;
-  }
+.taskCatagory {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.taskCatagory li {
+  width: 50%;
+  padding: 10px;
+}
 
 
 .urgencySelectContainer {
-    position: relative;
-  }
-  
-  .urgencySelect {
-    appearance: none;
-    -moz-appearance: none;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    font-size: 1rem;
-  }
-  
-  .urgencySelect option {
-    color: #0dff00;
-  }
+  position: relative;
+}
 
-  
+.urgencySelect {
+  appearance: none;
+  -moz-appearance: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+}
+
+.urgencySelect option {
+  color: #0dff00;
+}
+
+
 .toDoList,
 .completedList {
   list-style: none;
   padding: 0;
 }
 
-.completedList{
-    display: none;
+.completedList {
+  display: none;
 }
 
 .toDoItem,
 .completedItem {
   display: flex;
-  align-items:center;
+  align-items: center;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #333;
@@ -258,11 +263,12 @@ input:focus , select:focus{
 }
 
 .checkBox.completed::after {
-  content: '\2713'; /* Unicode check mark */
+  content: '\2713';
+  /* Unicode check mark */
   position: absolute;
   color: #0dff00;
   font-size: 1.2rem;
-  bottom:-3px;
+  bottom: -3px;
   left: 1px;
   font-weight: 600;
 
@@ -292,17 +298,18 @@ input:focus , select:focus{
   font-size: 14px;
 }
 
-.editInput{
+.editInput {
   background-color: #333;
   border: none;
-  color:#007bff;
-  
+  color: #007bff;
+
 }
 
 
-.toDoList, .completedList{
-  overflow-y: auto; 
-  max-height: 75vh; 
+.toDoList,
+.completedList {
+  overflow-y: auto;
+  max-height: 75vh;
   padding-inline: 10px;
   padding-bottom: 100px;
   scroll-behavior: smooth;
@@ -319,15 +326,15 @@ input:focus , select:focus{
   border-radius: 8px;
   border-color: #007bff !important;
   border: #007bff !important;
-  box-shadow: 2px 0 0 #007bff,-1px 0 0 #007bff,0 1px 0 #007bff,0 -1px 0 #007bff,0 3px 13px rgba(0,0,0,0.08)
-
+  box-shadow: 2px 0 0 #007bff, -1px 0 0 #007bff, 0 1px 0 #007bff, 0 -1px 0 #007bff, 0 3px 13px rgba(0, 0, 0, 0.08)
 }
 
 /* Add custom styles for the Flatpickr time input */
-.flatpickr-time, .flatpickr-time-separator{
-    border-radius: 8px;
-    background-color:#333;
-    color:#0dff00 !important;
+.flatpickr-time,
+.flatpickr-time-separator {
+  border-radius: 8px;
+  background-color: #333;
+  color: #0dff00 !important;
 }
 
 .flatpickr-calendar.hasTime .flatpickr-time {
@@ -360,7 +367,8 @@ input:focus , select:focus{
   background-color: #333;
 }
 
-.flatpickr-am-pm:focus, .flatpickr-am-pm:hover  {
+.flatpickr-am-pm:focus,
+.flatpickr-am-pm:hover {
   background-color: #333 !important;
   color: #007bff !important;
 }
@@ -376,9 +384,9 @@ input:focus , select:focus{
 
 
 /*  Plce holder change to show the input error */
-.error::placeholder{
-    color: #ff1f1f;
-    font-size: x-small;
+.error::placeholder {
+  color: #ff1f1f;
+  font-size: x-small;
 }
 
 
@@ -390,19 +398,22 @@ input:focus , select:focus{
     opacity: 0;
     transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.toDoList li, .completedList li {
+.toDoList li,
+.completedList li {
   opacity: 0;
   animation: fadeInDown 0.5s forwards;
   animation-delay: calc(var(--animation-order) * 0.5s);
 }
 
-.toDoList li.active, .completedList li.active {
+.toDoList li.active,
+.completedList li.active {
   opacity: 1;
 }
 
